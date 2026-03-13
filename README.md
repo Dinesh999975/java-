@@ -1,25 +1,14 @@
-package dinesh;
-
-import java.util.Scanner;
 import java.util.Arrays;
 
-public class Array1 {
+public class SecondMaxMin {
+    public static void main(String[] args) {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
-		System.out.println("enter the size: ");
-        int size = sc.nextInt();
-        
-        int arr[]=new int[size];
-        System.out.println("enter the elements:  ");
-        
-        for(int i=0;i<size;i++) {
-        	arr[i]=sc.nextInt();
-        	System.out.println(arr[i]+" ");
-        }
-        
+        int[] arr = {5, 2, 8, 1, 9};
 
-	}
+        Arrays.sort(arr);
 
-}
+        int secondMin = arr[1];
+        int secondMax = arr[arr.length-2];
+
+        System.out.println("Second Min = " + secondMin);
+        System.out.println("Second Max = " + secondMax);
