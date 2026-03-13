@@ -1,23 +1,25 @@
 package dinesh;
 
+import java.util.Scanner;
 import java.util.Arrays;
 
-public class Array {
+public class Array1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-        int [] arr = {1,2,3,4,5,6,7,8,9,10};
-        System.out.println(arr);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the size: ");
+        int size = sc.nextInt();
         
-        for(int i=0;i<arr.length;i++) {
-        	System.out.print(arr[i]+" ");
+        int arr[]=new int[size];
+        System.out.println("enter the elements:  ");
+        
+        for(int i=0;i<size;i++) {
+        	arr[i]=sc.nextInt();
+        	System.out.println(arr[i]+" ");
         }
         
-        for(int ele:arr) {
-        	System.out.print(ele+" ");
-        }
-        System.out.println(Arrays.toString(arr));
 
-        
+	}
 
-}}
+}
