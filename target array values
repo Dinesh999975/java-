@@ -1,0 +1,26 @@
+package dinesh;
+
+import java.util.Scanner;
+
+public class Numfound {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the target: ");
+        int Target = sc.nextInt();
+        
+        int arr[]= {44,66,2,25,78,43,67,34};
+        int index=-1;
+        for(int i=0;i<arr.length;i++) {
+        	if(arr[i]==Target) {
+        		index=i;
+        		break;
+        	}
+        }
+        if(index==-1)System.out.println("num not found");
+        else System.out.println("found found  "+index);
+		// TODO Auto-generated method stub
+
+	}
+
+}
